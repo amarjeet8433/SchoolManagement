@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A5F4CE3-4341-4D1B-9163-F766C11A0938}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SchoolProject</RootNamespace>
+    <AssemblyName>SchoolProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminDashboard.Designer.cs">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeeReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeeReceipt.Designer.cs">
+      <DependentUpon>frmFeeReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistration.Designer.cs">
+      <DependentUpon>frmRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uctrlAddAttend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlAddAttend.Designer.cs">
+      <DependentUpon>uctrlAddAttend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlAddFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlAddFees.Designer.cs">
+      <DependentUpon>uctrlAddFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlAddMarks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlAddMarks.Designer.cs">
+      <DependentUpon>uctrlAddMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlAddSD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlAddSD.Designer.cs">
+      <DependentUpon>uctrlAddSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlEditAttend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlEditAttend.Designer.cs">
+      <DependentUpon>uctrlEditAttend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlEditFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlEditFees.Designer.cs">
+      <DependentUpon>uctrlEditFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlEditMarks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlEditMarks.Designer.cs">
+      <DependentUpon>uctrlEditMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uctrlEditSD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uctrlEditSD.Designer.cs">
+      <DependentUpon>uctrlEditSD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAdminDashboard.resx">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeeReceipt.resx">
+      <DependentUpon>frmFeeReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistration.resx">
+      <DependentUpon>frmRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="uctrlAddAttend.resx">
+      <DependentUpon>uctrlAddAttend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlAddFees.resx">
+      <DependentUpon>uctrlAddFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlAddMarks.resx">
+      <DependentUpon>uctrlAddMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlAddSD.resx">
+      <DependentUpon>uctrlAddSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlEditAttend.resx">
+      <DependentUpon>uctrlEditAttend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlEditFees.resx">
+      <DependentUpon>uctrlEditFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlEditMarks.resx">
+      <DependentUpon>uctrlEditMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uctrlEditSD.resx">
+      <DependentUpon>uctrlEditSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
